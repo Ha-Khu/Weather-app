@@ -11,6 +11,7 @@ body {
   height: 100vh;
   width: 50%;
   margin: auto;
+  font-family: 'Poppins', sans-serif;
 }
 
 main{
@@ -25,4 +26,49 @@ main{
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   height: 60vh;
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.search-input{
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  width: 80%;
+  margin-top: 10%;
+}
+
+.search-input:focus{
+  outline: none;
+}
+
+.weather-icon{
+  width: 40%;
+  margin-top: 8%;
+}
+
+.temperature{
+  margin-top: 5%;
+  font-size: 3em;
+}
+
+.description{
+  margin-top: 3%;
+}
+
+.weather-details{
+  margin-top: 15%;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.humidity-value, .wind-value{
+  font-weight: bold;
+  font-size: 1.4em;
 }
